@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Header ==> Useful info about web | Header use for File Linking , Chrome Setting -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,22 @@
     <!-- ti tle represents Tab Name -->
     <title>Document</title>
 </head>
+
 <body>
     <!-- Heading Tag -->
     <h1>Day 02</h1>
     <h2>Attach Image</h2>
     <!-- Image Tag  (./ ==> Use for Relative Path) src , alt , width , height are attributes-->
-    <img src="./images/1 (1).jpg" alt="jellyfish" 
-    width="300" height="300">
+    <img src="./images/1 (1).jpg" alt="jellyfish" width="300" height="300">
 
-<!-- Heading in Rows -->
+    <!-- Heading in Rows -->
     <h1>Tables</h1>
     <!-- Work on row wise -->
 
     <h2>Table No 1</h2>
-    <table border="2"> 
+    <table border="2">
         <!-- Table Row -->
-        <tr>  
+        <tr>
             <!-- Table Heading -->
             <!-- No of Coloumns defined by "Table heading" -->
             <th>Name</th>
@@ -53,169 +54,170 @@
 
     </table>
 
-<!-- Heading in Coloumns -->
-<!-- Table heading then Table data -->
+    <!-- Heading in Coloumns -->
+    <!-- Table heading then Table data -->
 
-<h2>Table No 2</h2>
-<table border="2">
+    <h2>Table No 2</h2>
+    <table border="2">
 
-    <tr>
-        <th>Name</th>
-        <td>Faheem</td>
-        <td>Haseeb</td>
-        <td>Umar</td>
-    </tr>
+        <tr>
+            <th>Name</th>
+            <td>Faheem</td>
+            <td>Haseeb</td>
+            <td>Umar</td>
+        </tr>
 
-    <tr>
-        <th>Subject</th>
-        <td>English</td>
-        <td>Maths</td>
-        <td>Stats</td>
-     </tr>
+        <tr>
+            <th>Subject</th>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Stats</td>
+        </tr>
 
-        
-    <tr>
-        <th>Marks</th>
-        <td>22</td>
-        <td>82</td>
-        <td>33</td>
-    </tr>
-        
-</table>
 
-<h2>Table No 3</h2>
-<table border="2">
-    <tr>
-        <!-- colspan ==> 2 means merge 2 coloums -->
-        <th colspan="2">Marks</th>
-        <!-- rowspan ==> 2 means merge 2 rows -->
-        <th rowspan="2">Name</th>
-    </tr>
+        <tr>
+            <th>Marks</th>
+            <td>22</td>
+            <td>82</td>
+            <td>33</td>
+        </tr>
 
-    <tr>
-        <td>Theory</td>
-        <td>Practical</td>
-    </tr>
+    </table>
 
-    <tr>
-        <td>82</td>
-        <td>10</td>
-        <td>Haseeb</td>
-    </tr>
+    <h2>Table No 3</h2>
+    <table border="2">
+        <tr>
+            <!-- colspan ==> 2 means merge 2 coloums -->
+            <th colspan="2">Marks</th>
+            <!-- rowspan ==> 2 means merge 2 rows -->
+            <th rowspan="2">Name</th>
+        </tr>
 
-    <tr>
-        <td>53</td>
-        <td>15</td>
-        <td>Umar</td>
-    </tr>
-        
-</table>
+        <tr>
+            <td>Theory</td>
+            <td>Practical</td>
+        </tr>
 
-<!-- Forms most important topic of HTML -->
-<h2>Forms</h2>
-<!-- Select is use for dropdown menu (List form) -->
-  <select name="subjects" >
-      <!-- value ==> for Database ; eg: Subjects use for front end user -->
-    <option value=""> Subjects </option>
-    <option value="eng"> English </option>
-    <option value="maths"> Maths </option>
-    <option value="cal"> Calculus </option>
+        <tr>
+            <td>82</td>
+            <td>10</td>
+            <td>Haseeb</td>
+        </tr>
 
-  </select>
+        <tr>
+            <td>53</td>
+            <td>15</td>
+            <td>Umar</td>
+        </tr>
 
-<h2>Test Area</h2>
+    </table>
 
-<textarea placeholder="Write your Comment" name="comment" id="" cols="30" rows="10">
+    <!-- Forms most important topic of HTML -->
+    <h2>Forms</h2>
+    <!-- Select is use for dropdown menu (List form) -->
+    <select name="subjects">
+        <!-- value ==> for Database ; eg: Subjects use for front end user -->
+        <option value=""> Subjects </option>
+        <option value="eng"> English </option>
+        <option value="maths"> Maths </option>
+        <option value="cal"> Calculus </option>
+
+    </select>
+
+    <h2>Test Area</h2>
+
+    <textarea placeholder="Write your Comment" name="comment" id="" cols="30" rows="10">
      // Write your Comment
 </textarea>
 
-<h2> Types of Input Field</h2>
-<!-- Types of Input Field -->
-<h3>Input Field</h3>
-<input type="text">
-<br>
-<!-- Line Break -->
-<br> 
-<h3>Input Password</h3>
-<input type="password">
-<br>
-<br> 
-<h3>Button</h3>
-<input type="button" value = "Click Me">
-<br>
-<br> 
-<h3> Select Subjects</h3>
-<input name = "subject"type="checkbox" value = "eng"> English <br>
-<input name = "subject"type="checkbox" value = "math"> Math <br>
-<input name = "subject"type="checkbox" value = "calc"> Calculus
-<br>
-<br> 
-<h3>Input Gender</h3>
-<!-- Use Radio only for 1 input -->
-<input type="radio" value="male" name="gender"> Male <br>
-<input type="radio" value="female" name="gender"> Female
-<br>
-<br> 
-<h3>Select Color</h3>
-<input type="color">
-<br>
-<br> 
-<h3>Input Date</h3>
-<input type="date">
-<br>
-<br> 
-<h3>Input Email</h3>
-<!-- this have default restriction to follow pattern -->
-<input type="email">
-<br>
-<br> 
-<h3>Input file</h3>
-<input type="file">
-<br>
-<br>
-<h3>Input Month</h3> 
-<input type="month">
-<br>
-<br> 
-<h3>Input Number</h3>
-<input type="number">
-<br>
-<br> 
-<h3>Restore to Default Values</h3>
-<input type="reset">
-<br>
-<br> 
-<h3>Submit Button</h3>
-<input type="submit">
-<br>
-<br> 
-<h3>Input Range</h3>
-<input type="range" min = "1" max="100">
-<br>
-<br> 
-<h3>Input Time</h3>
-<input type="time">
-<br>
-<br> 
-<h3>Input URL</h3>
-<input type="url">
-<br>
-<br> 
-<h3>Input Week</h3>
-<input type="week">
-<br>
+    <h2> Types of Input Field</h2>
+    <!-- Types of Input Field -->
+    <h3>Input Field</h3>
+    <input type="text">
+    <br>
+    <!-- Line Break -->
+    <br>
+    <h3>Input Password</h3>
+    <input type="password">
+    <br>
+    <br>
+    <h3>Button</h3>
+    <input type="button" value="Click Me">
+    <br>
+    <br>
+    <h3> Select Subjects</h3>
+    <input name="subject" type="checkbox" value="eng"> English <br>
+    <input name="subject" type="checkbox" value="math"> Math <br>
+    <input name="subject" type="checkbox" value="calc"> Calculus
+    <br>
+    <br>
+    <h3>Input Gender</h3>
+    <!-- Use Radio only for 1 input -->
+    <input type="radio" value="male" name="gender"> Male <br>
+    <input type="radio" value="female" name="gender"> Female
+    <br>
+    <br>
+    <h3>Select Color</h3>
+    <input type="color">
+    <br>
+    <br>
+    <h3>Input Date</h3>
+    <input type="date">
+    <br>
+    <br>
+    <h3>Input Email</h3>
+    <!-- this have default restriction to follow pattern -->
+    <input type="email">
+    <br>
+    <br>
+    <h3>Input file</h3>
+    <input type="file">
+    <br>
+    <br>
+    <h3>Input Month</h3>
+    <input type="month">
+    <br>
+    <br>
+    <h3>Input Number</h3>
+    <input type="number">
+    <br>
+    <br>
+    <h3>Restore to Default Values</h3>
+    <input type="reset">
+    <br>
+    <br>
+    <h3>Submit Button</h3>
+    <input type="submit">
+    <br>
+    <br>
+    <h3>Input Range</h3>
+    <input type="range" min="1" max="100">
+    <br>
+    <br>
+    <h3>Input Time</h3>
+    <input type="time">
+    <br>
+    <br>
+    <h3>Input URL</h3>
+    <input type="url">
+    <br>
+    <br>
+    <h3>Input Week</h3>
+    <input type="week">
+    <br>
 
-<!-- Build Complete form -->
-<h2>Build Complete form</h2>
+    <!-- Build Complete form -->
+    <h2>Build Complete form</h2>
 
-<form>
-        <input placeholder = "Enter your Email" type="email" required> <br><br>
-        <input placeholder = "Enter your Password" type="password" required><br>
+    <form>
+        <input placeholder="Enter your Email" type="email" required> <br><br>
+        <input placeholder="Enter your Password" type="password" required><br>
         <input type="submit">
         <input type="reset">
 
 
-</form>
+    </form>
 
 </body>
+
 </html>
