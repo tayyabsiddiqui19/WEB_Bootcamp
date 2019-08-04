@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+.container {
+  background: lightblue;
+  width: 100vw;
+  height: 100vh;
+}
+.row1 {
+  height: 10%;
+  background: red;
+}
+.row2 {
+  height: 30%;
+  background: blue;
+}
+.row3 {
+  height: 20%;
+  background: lightgreen;
+  display: flex;
+}
+.row3c1 {
+  flex: 1;
+  background: yellow;
+}
+.row3c2 {
+  flex: 1;
+  background: green;
+}
+.row4 {
+  height: 20%;
+  background: purple;
+}
+.row5 {
+  height: 20%;
+  background: black;
+}
