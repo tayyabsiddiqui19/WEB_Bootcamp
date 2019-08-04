@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightblue;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+}
+.row1 {
+  height: 100%;
+  background: lightgoldenrodyellow;
+  display: flex;
+}
+.row1c1 {
+  display: flex;
+  flex: 7;
+  background: lightcoral;
+  flex-flow: column;
+}
+.upper {
+  display: flex;
+  flex: 6;
+  background: lightgreen;
+  flex-flow: column;
+}
+.upper > h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  margin-bottom: 20px;
+}
+.upper > h2 {
+  letter-spacing: 4px;
+  word-spacing: 4px;
+}
+.lower {
+  background: lightseagreen;
+  flex: 4;
+  display: flex;
+}
+.lowerC1 {
+  background: lightsalmon;
+  flex: 5;
+  display: flex;
+}
+.lowerC2 {
+  background: lightslategrey;
+  flex: 5;
+  display: flex;
+  flex-flow: column;
+}
+.lowerC2 > p {
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.row1c2 {
+  display: flex;
+  flex: 3;
+  background: lightgray;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+.row1c2 > p {
+  font-size: 30px;
+  /* padding-bottom: 20px; */
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background: purple;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+}
