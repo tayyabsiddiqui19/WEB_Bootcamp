@@ -1,0 +1,41 @@
+/* #head {
+    background-image: url("./images/quotation.png"); 
+    height: 600px;
+    width: 700px;
+    border: 5px solid red;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+    /* margin-bottom: 200px;  */
+    
+/* }
+#footer {
+    background-color: lightgreen; 
+    height: 300px;
+    width: 300px;
+} */
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/quotation.png");
+    background-repeat: no-repeat;
+
+    background-size: 100% 100%,cover;
+    /* border: 20px solid yellow; */
+}
+
+/* #container02 {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} */
