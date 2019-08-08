@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: antiquewhite;
+}
+
+.text {
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  margin-bottom: 50px;
+  font-style: oblique;
+  font-size: 30px;
+  color: navy;
+}
+
+.containerone {
+  height: 100vh;
+  width: 100vw;
+  background: orange;
+}
+.row1 {
+  height: 15%;
+  background: rebeccapurple;
+  display: flex;
+}
+.r1c1 {
+  background: red;
+  flex: 1;
+}
+.r1c2 {
+  background: whitesmoke;
+  flex: 2;
+}
+.row2 {
+  height: 85%;
+  display: flex;
+}
+.r2c1 {
+  background: black;
+  flex: 1;
+}
+.r2c2 {
+  background: rosybrown;
+  flex: 2;
+  flex-flow: column;
+}
+.r1 {
+  height: 50%;
+  background: blue;
+}
+.r2 {
+  height: 20%;
+  background: burlywood;
+  display: flex;
+}
+.c1 {
+  background: purple;
+  flex: 1;
+}
+.c2 {
+  background: brown;
+  flex: 1;
+}
+.r3 {
+  background: green;
+  height: 30%;
+}
+
+.r3 > h1 {
+  background-color: black;
+}
+
+.containertwo {
+  height: 100vh;
+  width: 100vw;
+  background: blanchedalmond;
+}
+.trow1 {
+  height: 10%;
+  background: whitesmoke;
+  display: flex;
+}
+.t1c1 {
+  background: blue;
+  flex: 1;
+}
+.t1c2 {
+  background: red;
+  flex: 1;
+}
+.t1c3 {
+  background: green;
+  flex: 1;
+}
+.t1c4 {
+  background: yellow;
+  flex: 1;
+}
+.trow2 {
+  height: 30%;
+  background: brown;
+}
+.trow3 {
+  height: 20%;
+  background: whitesmoke;
+  display: flex;
+}
+.t3c1 {
+  background: orangered;
+  flex: 1;
+}
+.t3c2 {
+  background: whitesmoke;
+  flex: 1;
+}
+.trow4 {
+  height: 20%;
+  background: whitesmoke;
+  display: flex;
+}
+.t4c1 {
+  background: whitesmoke;
+  flex: 1;
+}
+.t4c2 {
+  background: skyblue;
+  flex: 1;
+}
+.trow5 {
+  height: 20%;
+  background: peru;
+}
+.trow5 > h1 {
+  background-color: black;
+}
+
+.containerthree {
+  height: 100vh;
+  width: 100vw;
+  background: blanchedalmond;
+}
+.frow1 {
+  height: 10%;
+  background: whitesmoke;
+  display: flex;
+}
+.f1c1 {
+  background: gray;
+  flex: 1;
+}
+.f1c2 {
+  background: blue;
+  flex: 3;
+}
+
+.frow2 {
+  height: 50%;
+  background: purple;
+}
+.frow3 {
+  height: 20%;
+  background: whitesmoke;
+  display: flex;
+}
+.f3c1 {
+  background: orangered;
+  flex: 1;
+}
+.f3c2 {
+  background: yellow;
+  flex: 1;
+}
+.frow4 {
+  height: 20%;
+  background: darkslategray;
+  display: flex;
+}
+
+.frow4 > h1 {
+  background-color: black;
+}
