@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0.25px black solid;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightblue;
+}
+.row1 {
+  display: flex;
+  height: 10%;
+}
+.row1coloumn1 {
+  background: lightcoral;
+  flex: 2;
+}
+.row1coloumn2 {
+  background: white;
+  flex: 10;
+}
+.row2 {
+  display: flex;
+  background: lightgreen;
+  height: 90%;
+}
+.row2coloumn1 {
+  background: black;
+  flex: 2;
+}
+.row2coloumn2 {
+  background: brown;
+  flex: 10;
+}
+.r2c2row1 {
+  height: 50%;
+  background: blue;
+}
+.r2c2row2 {
+  display: flex;
+  height: 10%;
+}
+.r2c2row2coloumn1 {
+  background: purple;
+  flex: 5;
+}
+.r2c2row2coloumn2 {
+  background: burlywood;
+  flex: 5;
+}
+.r2c2row3 {
+  height: 40%;
+  background: green;
+}
