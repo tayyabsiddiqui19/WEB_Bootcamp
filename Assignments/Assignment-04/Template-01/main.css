@@ -33,9 +33,9 @@
 .ur1c2 {
   flex: 1;
   /* background: lightgrey; */
-  background-image: url(./logo/array_logo.png);
+  background-image: url(./logo/array_logo.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%, cover;
+  background-size: 100% 100%, cover
 }
 .ur1c3 {
   flex: 1;
@@ -136,7 +136,7 @@
 }
 .lr3c1 {
   flex: 1;
-  background: lightgreen;
+  /* background: lightgreen; */
 }
 .lr3c2 {
   flex: 1;
@@ -145,17 +145,19 @@
 .circle1 {
   width: 100px;
   height: 100px;
-  margin:auto;
+  margin: auto;
   border-radius: 50%;
   background-image: url(./developers_photo/developer_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 .lr3c3 {
   flex: 3;
-  background: orange;
+  /* background: orange; */
+  margin: auto;
+}
+.name {
+  margin-top: 15px;
 }
 .lr3c4 {
   flex: 1;
@@ -164,29 +166,31 @@
 .circle2 {
   width: 100px;
   height: 100px;
-  margin:auto;
+  margin: auto;
   border-radius: 50%;
   background-image: url(./developers_photo/developer_2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
 
 .lr3c5 {
   flex: 3;
-  background: yellow;
+  /* background: yellow; */
+  margin: auto;
 }
 .lr3c6 {
   flex: 1;
-  background: brown;
+  /* background: brown; */
 }
 .lr4 {
   flex: 4;
   /* height: 35%; */
   display: flex;
-  background: lightgreen;
+  /* background: lightgreen; */
 }
 .lr4c1 {
   flex: 1;
-  background: lightseagreen;
+  /* background: lightseagreen; */
 }
 .lr4c2 {
   flex: 1;
@@ -194,14 +198,16 @@
 .circle3 {
   width: 100px;
   height: 100px;
-  margin:auto;
+  margin: auto;
   border-radius: 50%;
   background-image: url(./developers_photo/developer_3.jpg);
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
 .lr4c3 {
   flex: 3;
-  background: lightslategray;
+  /* background: lightslategray; */
+  margin: auto;
 }
 .lr4c4 {
   flex: 1;
@@ -209,16 +215,26 @@
 .circle4 {
   width: 100px;
   height: 100px;
-  margin:auto;
+  margin: auto;
   border-radius: 50%;
   background-image: url(./developers_photo/developer_4.jpg);
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
 .lr4c5 {
   flex: 3;
-  background: white;
+  /* background: white; */
+  margin: auto;
 }
 .lr4c6 {
   flex: 1;
-  background: yellow;
+  /* background: yellow; */
+}
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
