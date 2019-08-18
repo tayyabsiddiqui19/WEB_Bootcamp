@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background: lightcoral; */
+  display: grid;
+  grid-template-rows: 60fr 40fr;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuItems {
+}
+.upperContent {
+  background: lightcoral;
+  display: grid;
+  grid-template-rows: 20fr 80fr;
+    background: url(./images/quotation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.menu {
+  /* background: lightseagreen; */
+  display: grid;
+  grid-template-columns: 2fr 3fr repeat(5, 1fr);
+  grid-template-areas: "logo . home about blog contact helpp";
+  border-bottom: 2px solid white;
+}
+.logo {
+  grid-area: logo;
+}
+.home {
+  grid-area: home;
+}
+.about {
+  grid-area: about;
+}
+.blog {
+  grid-area: blog;
+}
+.contact {
+  grid-area: contact;
+}
+.helpp {
+  grid-area: helpp;
+}
+.mainContent {
+  /* background: lightpink; */
+  display: grid;
+  grid-template-rows: 70fr 30fr;
+}
+.mainUpper {
+  /* background: brown; */
+  flex-flow: column;
+
+}
+.mainUpper > h1 {
+    word-spacing: 5px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+.mainUpper > h3 {
+    word-spacing: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+.mainLower {
+  /* background: yellow; */
+  padding: 0 40px;
+}
+
+/* 
+#signUp {
+    padding: 5px 15px;
+    margin: 5px;
+    border: 1px solid white;
+    color: Red;
+       background: gray;
+}
+#signIn {
+  padding: 5px 15px;
+  margin: 5px;
+  border: 1px solid white;
+  color: red;
+  background: gray;
+} */
+.btn1 {
+  padding: 5px 15px;
+  margin: 5px;
+  border: 1px solid white;
+}
+.btn2 {
+  padding: 5px 15px;
+  margin: 5px;
+  border: 1px solid white;
+  /* color: blue; */
+}
+
+.lowerContent {
+  /* background: lightgreen; */
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+}
+.box {
+  flex-flow: column;
+  padding: 5px;
+}
+.box > p {
+  /* margin-bottom: 10px; */
+  text-align: center;
+  padding: 5px;
+}
+.box > h1 {
+  margin-bottom: 10px;
+}
+.box > .icon {
+  margin-bottom: 30px;
+}
