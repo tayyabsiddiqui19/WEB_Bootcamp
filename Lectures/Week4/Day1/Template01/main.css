@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b c"
+    "d e f";
+}
+.child1 {
+  grid-area: a;
+  background: ;
+}
+.child2 {
+  grid-area: b;
+  background: lightblue;
+}
+.child3 {
+  grid-area: b;
+  background: lightcoral;
+}
+.child4 {
+  grid-area: d;
+  background: lightcyan;
+}
+.child5 {
+  grid-area: e;
+  background: lightgreen;
+}
+.child6 {
+  grid-area: f;
+  background: lightsalmon;
+}
