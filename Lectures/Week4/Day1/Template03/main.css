@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat (8, 1fr);
+  grid-template-rows: 10fr 20fr 20fr 50fr;
+  grid-template-areas:
+    "a a b b b c d e"
+    "f f f f h h h h"
+    "g g g g h h h h"
+    "i i i j j k k k";
+  /* align-items: center;
+  justify-items: center; */
+}
+.child1 {
+  grid-area: a;
+  background: lightseagreen;
+  /*   
+Use this when you are going to use grid
+  display: grid;
+  align-items: center;
+  justify-items: center */
+}
+.child2 {
+  grid-area: b;
+  background: lightblue;
+}
+.child3 {
+  grid-area: c;
+  background: lightcoral;
+}
+.child4 {
+  grid-area: d;
+  background: lightcyan;
+}
+.child5 {
+  grid-area: e;
+  background: lightgreen;
+}
+.child6 {
+  grid-area: f;
+  background: brown;
+}
+.child7 {
+  grid-area: g;
+  background: lightslategray;
+}
+.child8 {
+  grid-area: h;
+  background: lightsalmon;
+}
+.child9 {
+  grid-area: i;
+  background: lawngreen;
+}
+.child10 {
+  grid-area: j;
+  background: yellow;
+}
+.child11 {
+  grid-area: k;
+  background: lightgreen;
+}
