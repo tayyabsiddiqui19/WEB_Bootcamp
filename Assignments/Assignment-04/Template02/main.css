@@ -93,7 +93,7 @@
 }
 .heading1 {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 20%;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   color: gray;
@@ -115,7 +115,7 @@
 }
 .heading2 {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   color: black;
@@ -127,6 +127,25 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+.trianglewraper {
+  flex: 1;
+  display: flex;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+.triangleColor1 {
+  border-left: 20px solid white;
+}
+.triangleColor2 {
+  border-left: 20px solid rgb(230, 146, 44);
+}
+.triangleColor3 {
+  border-left: 20px solid rgb(59, 52, 52);
+}
 .r2c3 {
   flex: 1;
   background-color: rgb(59, 52, 52);
@@ -137,7 +156,7 @@
 }
 .heading3 {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   color: rgb(230, 146, 44);
@@ -159,7 +178,7 @@
 }
 .heading4 {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   color: white;
