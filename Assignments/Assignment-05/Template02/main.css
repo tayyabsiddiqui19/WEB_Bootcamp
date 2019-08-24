@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "a b b b b"
+    "c d d d d"
+    "c d d d d"
+    "c d d d d"
+    "c d d d d"
+    "c e e f f"
+    "c g g g g"
+    "c g g g g";
+}
+.child1 {
+  background: lightcoral;
+  grid-area: a;
+}
+.child2 {
+  background: white;
+  grid-area: b;
+}
+.child3 {
+  background: black;
+  grid-area: c;
+}
+.child4 {
+  background: blue;
+  grid-area: d;
+}
+.child5 {
+  background: purple;
+  grid-area: e;
+}
+.child6 {
+  background: brown;
+  grid-area: f;
+}
+.child7 {
+  background: green;
+  grid-area: g;
+}
