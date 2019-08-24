@@ -1,29 +1,32 @@
 * {
-  padding: 0;
-  margin: 0;
   border: 0;
+  margin: 0;
+  padding: 0;
 }
-
 .container {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  background: red;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "a b c"
-    "d e f";
+    "a a"
+    "b b"
+    "c d"
+    "e e"
+    "f f";
 }
 .child1 {
   grid-area: a;
-  background: lightseagreen;
+  background: yellow;
 }
 .child2 {
   grid-area: b;
   background: lightblue;
 }
 .child3 {
-  grid-area: b;
+  grid-area: c;
   background: lightcoral;
 }
 .child4 {
