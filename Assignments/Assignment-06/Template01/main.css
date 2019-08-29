@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 76fr 24fr;
+}
+.upperPart {
+  display: grid;
+  grid-template-rows: 20fr 80fr;
+  background-image: url(./images/background/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 4fr;
+  grid-template-areas: ". a b . c . d . e . f . ";
+}
+.logo {
+  grid-area: a;
+}
+.logo > img {
+  padding-left: 100px;
+  padding-top: 10px;
+}
+.logoText {
+  grid-area: b;
+  padding-top: 20px;
+  font-size: 10px;
+  color: white;
+  text-align: start;
+  font-family: "Courier New", Courier, monospace;
+}
+.logoText > p {
+  font-size: 9px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.home {
+  grid-area: c;
+  height: 70%;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid red;
+}
+.home > p {
+  padding-top: 35%;
+}
+.projects {
+  grid-area: d;
+  height: 70%;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.projects > p {
+  padding-top: 35%;
+}
+.contact {
+  grid-area: e;
+  height: 70%;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.contact > p {
+  padding-top: 35%;
+}
+.blogs {
+  grid-area: f;
+  height: 70%;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.blogs > p {
+  padding-top: 35%;
+}
+.mainBody {
+  padding-left: 13%;
+  padding-top: 5%;
+  color: white;
+}
+.mainBody > h1 {
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.mainBody > p {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.lowerPart {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: " . logo1 logo2 logo3 logo4 . ";
+}
+.company_logo1 {
+  grid-area: logo1;
+  background-image: url(./images/company_logo/logo01.jpg);
+}
+.company_logo2 {
+  grid-area: logo2;
+  background-image: url(./images/company_logo/logo02.jpg);
+}
+.company_logo3 {
+  grid-area: logo3;
+  background-image: url(./images/company_logo/logo03.jpg);
+}
+.company_logo4 {
+  grid-area: logo4;
+  background-image: url(./images/company_logo/logo04.jpg);
+}
