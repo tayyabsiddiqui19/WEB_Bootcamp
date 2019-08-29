@@ -3,13 +3,20 @@
   border: 0;
   margin: 0;
 }
+.flex {
+  align-items: center;
+  justify-content: center;
+}
 .container {
   height: 100vh;
   width: 100vw;
   display: grid;
   background: lightcoral;
+  background-image: url(./images/background.jpg);
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 0.1fr 2fr 2fr 2fr 2fr 2fr 2fr 0.1fr;
+  grid-template-columns: 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover;
   grid-template-areas:
     " . a . . . . . ."
     ". . text text text b c ."
@@ -17,54 +24,136 @@
     ". . . j k l . .";
 }
 .logoArgo {
-  background: lightgreen;
+  background: orange;
   grid-area: a;
+  display: flex;
 }
-.content{
-    background: lightseagreen;
-    grid-area: text;
+.logoArgo > h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  /* letter-spacing: 1px;
+  word-spacing: 4px; */
+}
+.content {
+  /* background: lightseagreen; */
+  grid-area: text;
+  font-size: 14px;
+  text-align: end;
+  padding-right: 20px;
+  padding-top: 40px;
+  color: white;
+}
+.content > h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.content > p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .services {
-  background: lightsalmon;
+  background: orangered;
+  background-image: url(./images/services.png);
+  background-repeat: no-repeat;
+  background-size: 70% 90%, cover;
   grid-area: b;
+  background-position: center;
+  display: flex;
+}
+.services > .serviceText {
+  font-size: 20px;
+  margin-top: 135px;
 }
 .picture1 {
   background: orange;
+  background-image: url(./images/picture1.jpg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
   grid-area: c;
 }
 .picture2 {
-  background: orangered;
+  /* background: orangered; */
+  background-image: url(./images/picture2.jpg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
   grid-area: d;
 }
 .portfolio {
-  background: olivedrab;
+  background: orangered;
+  background-image: url(./images/portfolio.jpg);
+  background-size: 70% 70%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
   grid-area: e;
 }
+.portfolio > .portfolioText {
+  font-size: 20px;
+  margin-top: 135px;
+}
 .aboutUs {
-  background: blueviolet;
+  background: orange;
   grid-area: f;
+  background-image: url(./images/aboutUs.png);
+  background-size: 50% 70%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.aboutUs > .aboutUsText {
+  font-size: 20px;
+  margin-top: 135px;
 }
 .picture3 {
   background: red;
   grid-area: g;
+  background-image: url(./images/picture3.jpg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
 }
 .picture4 {
   background: darkgoldenrod;
   grid-area: h;
+  background-image: url(./images/picture4.jpg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
 }
 .blog {
-  background: darkgray;
+  background: orange;
   grid-area: i;
+  background-image: url(./images/blog.png);
+  background-size: 100% 120%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.blog > .blogText {
+  font-size: 20px;
+  margin-top: 135px;
 }
 .picture5 {
   background: saddlebrown;
   grid-area: j;
+  background-image: url(./images/picture5.jpg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
 }
 .picture6 {
   background: aqua;
   grid-area: k;
+  background-image: url(./images/picture6.jpg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
 }
 .contact {
-  background: chartreuse;
+  background: orangered;
   grid-area: l;
+  background-image: url(./images/contact.png);
+  background-size: 60% 70%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.contact > .contactText {
+  font-size: 20px;
+  margin-top: 135px;
 }
