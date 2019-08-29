@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background: lightcoral;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.1fr 2fr 2fr 2fr 2fr 2fr 2fr 0.1fr;
+  grid-template-areas:
+    " . a . . . . . ."
+    ". . text text text b c ."
+    ". d e f g h i ."
+    ". . . j k l . .";
+}
+.logoArgo {
+  background: lightgreen;
+  grid-area: a;
+}
+.content{
+    background: lightseagreen;
+    grid-area: text;
+}
+.services {
+  background: lightsalmon;
+  grid-area: b;
+}
+.picture1 {
+  background: orange;
+  grid-area: c;
+}
+.picture2 {
+  background: orangered;
+  grid-area: d;
+}
+.portfolio {
+  background: olivedrab;
+  grid-area: e;
+}
+.aboutUs {
+  background: blueviolet;
+  grid-area: f;
+}
+.picture3 {
+  background: red;
+  grid-area: g;
+}
+.picture4 {
+  background: darkgoldenrod;
+  grid-area: h;
+}
+.blog {
+  background: darkgray;
+  grid-area: i;
+}
+.picture5 {
+  background: saddlebrown;
+  grid-area: j;
+}
+.picture6 {
+  background: aqua;
+  grid-area: k;
+}
+.contact {
+  background: chartreuse;
+  grid-area: l;
+}
