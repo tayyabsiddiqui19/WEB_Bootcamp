@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightcoral;
+  overflow: hidden;
+}
+.upperPart {
+  height: 70%;
+  background: darkmagenta;
+  display: grid;
+  grid-template-columns: 100vw 100vw 100vw;
+  transition: transform 1s ease-in-out;
+  transition-duration: 5s;
+  transform: translateX(-200vw);
+}
+.upperPart:hover {
+  transform: translateX(0px);
+}
+.rightToLeft1 {
+  background-image: url(./images/image01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rightToLeft2 {
+  background-image: url(./images/image02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rightToLeft3 {
+  background-image: url(./images/image03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lowerPart {
+  height: 30%;
+  background: darkgoldenrod;
+  display: flex;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
