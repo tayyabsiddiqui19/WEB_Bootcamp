@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightcoral;
+  /* overflow: hidden; */
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background: orange;
+  border-radius: 50%;
+  animation-name: random;
+  animation-duration: 2s;
+  /* animation-iteration-count: 5; */
+  animation-iteration-count: infinite;
+  /* animation-delay: 1s; */
+  animation-timing-function: ease-in-out;
+  /* animation-direction: reverse; */
+  animation-direction: alternate;
+}
+/* Do proper calculation of screen */
+@keyframes random {
+  0% {
+    transform: translate(0, 0);
+    background: red;
+  }
+  25% {
+    transform: translate(100px, 0);
+    background: green;
+  }
+  50% {
+    transform: translate(100px, 100px);
+    background: blue;
+  }
+  75% {
+    transform: translate(0, 100px);
+    background: purple;
+  }
+  100% {
+    transform: translate(0, 0);
+    background: red;
+  }
+}
