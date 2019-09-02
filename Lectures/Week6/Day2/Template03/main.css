@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightcoral;
+  /* overflow: hidden; */
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  animation-name: random;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* animation-fill-mode: backwards; */
+  /* Calculation Function */
+  position: relative;
+  left: calc(100%-150px);
+  top: calc(100%-150px);
+}
+/* Do proper calculation of screen */
+/* @keyframes random {
+  0% {
+    transform: translate(0, 0);
+    background: yellow;
+  }
+  25% {
+    transform: translate(100px, 0);
+    background: green;
+  }
+  50% {
+    transform: translate(100px, 100px);
+    background: blue;
+  }
+  75% {
+    transform: translate(0, 100px);
+    background: purple;
+  }
+  100% {
+    transform: translate(0, 0);
+    background: red;
+  }
+} */
+
+@keyframes random {
+  0% {
+    top: 0;
+    left: 0;
+    background: yellow;
+  }
+  25% {
+    top: 0px;
+    left: calc(100% - 150px);
+    background: green;
+  }
+  50% {
+    top: calc(100% - 150px);
+    left: calc(100% - 150px);
+    background: blue;
+  }
+  75% {
+    top: calc(100% - 150px);
+    left: 0;
+    background: purple;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+}
