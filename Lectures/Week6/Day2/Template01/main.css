@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightcoral;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background: orange;
+  border-radius: 50%;
+  animation-name: random;
+  animation-duration: 5s;
+  /* animation-iteration-count: 5; */
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes random {
+  from {
+    background: red;
+  }
+
+  to {
+    background: yellow;
+  }
+}
