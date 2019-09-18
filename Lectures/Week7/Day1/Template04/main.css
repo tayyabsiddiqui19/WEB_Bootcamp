@@ -1,0 +1,88 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: lightcoral;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20fr 40fr 20fr 40fr;
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "e e e"
+    "f f f";
+}
+.a {
+  grid-area: a;
+  background: lightgreen;
+  text-align: center;
+}
+.b {
+  grid-area: b;
+  background: blue;
+  text-align: center;
+}
+.c {
+  grid-area: c;
+  background: red;
+  text-align: center;
+}
+.d {
+  grid-area: d;
+  background: yellow;
+  text-align: center;
+}
+.e {
+  grid-area: e;
+  background: purple;
+  text-align: center;
+}
+.f {
+  grid-area: f;
+  background: lightseagreen;
+  text-align: center;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20fr 40fr 30fr;
+    grid-template-areas:
+      "a a a"
+      "b c d"
+      "f f f";
+  }
+  /* Display: None :> remove the menu from the html. so it will not take space. */
+  .e {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20fr 20fr 20fr 20fr 20fr;
+    grid-template-areas:
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+  }
+  /* Display: None :> remove the menu from the html. so it will not take space. */
+  .a {
+    display: none;
+  }
+  /* It takes previous value of E ehich is none. So we have to call it again */
+  .e {
+    display: flex;
+  }
+}
