@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: lightcoral;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  width: 50vw;
+  height: 50vw;
+}
+.circle {
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+  background: orange;
+  animation-name: random;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes random {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.csmall {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+}
+.c1 {
+  left: calc(50% - 2.5vw);
+}
+.c2 {
+  left: 3.7%;
+  top: 46%;
+}
+.c3 {
+  left: 82.5%;
+  top: 31%;
+}
