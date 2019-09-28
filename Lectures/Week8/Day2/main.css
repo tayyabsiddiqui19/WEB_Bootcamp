@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh minmax(50vh, min-content);
+  grid-template-columns: minmax(0rem, 1fr) minmax(min-content, 1100px) minmax(
+      0rem,
+      1fr
+    );
+  grid-template-areas:
+    "main main main"
+    ". services .";
+}
+
+.main {
+  grid-area: main;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("./image/bg.jpg");
+  background-size: cover;
+  flex-flow: column;
+  color: white;
+  background-attachment: fixed;
+  margin-bottom: 5rem;
+}
+
+.main h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.main div {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid white;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+
+.services {
+  grid-area: services;
+  background: rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  grid-row-gap: 5rem;
+}
+
+.service {
+    flex-flow: column;
+    padding: 4rem 0rem;
+}
+
+.service i {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.service h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+}
+
+.service p {
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 3rem;
+}
+
+@media only screen and (max-width: 650px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .main h1 {
+        letter-spacing: 0px;
+        font-size: 3rem;
+      }
+      
+      .main h2 {
+        letter-spacing: 0px;
+        font-size: 2rem;
+      }
+
+
+
+}
